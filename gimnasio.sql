@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 01-06-2024 a las 00:17:44
+-- Tiempo de generación: 02-06-2024 a las 21:29:32
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -113,16 +113,14 @@ CREATE TABLE IF NOT EXISTS `socio` (
   PRIMARY KEY (`id_socio`),
   UNIQUE KEY `dni` (`dni`),
   UNIQUE KEY `correo` (`correo`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `socio`
 --
 
 INSERT INTO `socio` (`id_socio`, `dni`, `nombre`, `apellido`, `edad`, `correo`, `telefono`, `cont_asistencia`, `estado`) VALUES
-(1, '27350398', 'Martin', 'Javier', 44, 'guidojaviermartin@gmail.com', '2664307095', 12, 1),
-(2, '0000001', 'Macana', 'Mimo', 1000000, 'mimomacana@sindican.org', '2664000001', 12, 1),
-(3, '7896214', 'Argento', 'Pepe', 66, 'ppargento@yahoo.com.ar', '01145873126', 12, 1);
+(1, '27350398', 'Martin', 'Javier', 44, 'guidojaviermartin@gmail.com', '2664307095', 12, 1);
 
 --
 -- Restricciones para tablas volcadas
